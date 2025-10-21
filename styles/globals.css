@@ -7,9 +7,13 @@
 }
 
 body {
+  margin: 0 auto;
+  color: var(--text-color);
+  font-family: var(--page-font), Arial, Helvetica, sans-serif;
+  font-weight: var(--regular-font-weight);
+  font-size: var(--base-font-size);
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
 }
 
 h1,
