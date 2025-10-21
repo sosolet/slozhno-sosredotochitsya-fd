@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background: var(--bg-image-theme), var(--bg-color-theme);
+  background-image: var(--bg-image-theme);
+  background-color: var(--bg-color-theme);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
