@@ -212,8 +212,8 @@
   }
 
   .header__title {
-    margin: -20px;
     grid-column: 1 / 3;
+    margin: -20px;
   }
 
   .decorated-focus {
