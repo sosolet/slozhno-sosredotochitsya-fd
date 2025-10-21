@@ -16,7 +16,7 @@
   --h3-color: #000028;
   --text-color: #f1b2ce;
   --shadow-color: var(--accent-color);
-  --padding-block-start-header: 75px;
+  --padding-block-header: 75px 12px;
   --padding-inline-header: 10px 10px;
   --padding-inline-container: 10px 10px;
   --margin-block-main: 40px;
