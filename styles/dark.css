@@ -1,5 +1,6 @@
 :root.theme-dark {
   --bg-image-theme: url(../images/cover-image-dark.png);
+  --bg-color-theme: #000028;
   --decorated-color: #ff0070;
   --decorated-button-color: #ff007066;
   --decorated-link-color: #f1b2ce;
