@@ -15,11 +15,10 @@
   --h3-color: #000028;
   --text-color: #f1b2ce;
   --shadow-color: var(--accent-color);
-  --padding-block-start-header: 10px;
+  --padding-block-start-header: 75px;
+  --padding-inline-header: 10px 10px;
   --padding-inline-container: 10px 10px;
   --margin-block-main: 40px;
   --main-gap: 50px;
-  --gallery-gap: 10px;  
+  --gallery-gap: 10px;
 }
-/* Для планшета и десктопа 
-clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)*/
