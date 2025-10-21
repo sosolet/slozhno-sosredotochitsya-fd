@@ -1,5 +1,6 @@
 :root.theme-light {
   --bg-image-theme: url(../images/cover-image-light.png);
+  --bg-color-theme: #fff1f7;
   --decorated-color: #353430;
   --decorated-button-color: #32312d66;
   --decorated-link-color: var(--decorated-color);
@@ -15,6 +16,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image-theme: url(../images/cover-image-light.png);
+    --bg-color-theme: #fff1f7;
     --decorated-color: #353430;
     --decorated-button-color: #32312d66;
     --decorated-link-color: var(--decorated-color);

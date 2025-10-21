@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--bg-image-theme);
+  background: var(--bg-image-theme), var(--bg-color-theme);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,6 +14,7 @@
   grid-template-columns: 1fr;
   padding-inline: var(--padding-inline-header);
   padding-block-start: var(--padding-block-start-header);
+  min-block-size: 668px;
   block-size: 100vh;
 }
 
@@ -179,6 +180,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-block-size: 668px;
   block-size: 100vh;
 }
 
