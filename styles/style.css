@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--bg-image-theme);
   background-color: var(--bg-color-theme);
+  background-image: var(--bg-image-theme);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,11 +12,12 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 160px 250px auto;
+  grid-template-columns: 1fr;
   padding-inline: var(--padding-inline-header);
   padding-block-start: var(--padding-block-start-header);
   min-block-size: 668px;
   block-size: 100vh;
+  padding-block-end: 10px;
 }
 
 .decorated-zone::before {
@@ -77,12 +78,12 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   color: var(--decorated-color);
+  line-height: 18px;
   text-transform: lowercase;
   background-color: transparent;
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
-  line-height: 18px;
 }
 
 .header__theme-menu-button:hover:not(:focus-visible) {
@@ -100,7 +101,7 @@
 }
 
 .header__title {
-  padding-block-start: 6px;
+  margin-block-start: 8px;
   text-shadow: 4px 4px 0px var(--shadow-color);
 }
 
@@ -198,7 +199,7 @@
     --padding-inline-header: 20px 20px;
     --padding-inline-container: 20px 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 268px 264px auto;
+    padding-block-end: 20px;
   }
 
   .decorated-zone::before {
@@ -291,7 +292,7 @@
 @media (width >= 1024px) {
   .header {
     --padding-block-start-header: 20px;
-    grid-template-rows: 294px 248px auto;
+    grid-template-rows: minmax(294px, 1.5fr) minmax(248px, 1fr) 1fr;
   }
 
   .header__theme-menu {
