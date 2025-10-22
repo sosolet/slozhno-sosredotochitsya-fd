@@ -14,10 +14,9 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-inline: var(--padding-inline-header);
-  padding-block-start: var(--padding-block-start-header);
+  padding-block: var(--padding-block-header);
   min-block-size: 668px;
   block-size: 100vh;
-  padding-block-end: 10px;
 }
 
 .decorated-zone::before {
@@ -195,11 +194,10 @@
 
 @media (width >= 768px) {
   .header {
-    --padding-block-start-header: 192px;
+    --padding-block-header: 192px 20px;
     --padding-inline-header: 20px 20px;
     --padding-inline-container: 20px 20px;
     grid-template-columns: repeat(2, 1fr);
-    padding-block-end: 20px;
   }
 
   .decorated-zone::before {
@@ -291,8 +289,12 @@
 
 @media (width >= 1024px) {
   .header {
-    --padding-block-start-header: 20px;
-    grid-template-rows: minmax(294px, 1.5fr) minmax(248px, 1fr) 1fr;
+    --padding-block-header: 20px 0;
+    grid-template-rows: 1.3fr 1.1fr 0.9fr;
+  }
+
+  .header__title {
+    margin-block-start: 4px;
   }
 
   .header__theme-menu {
